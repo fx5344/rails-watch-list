@@ -11,11 +11,9 @@
   <p><%= bookmark.movie.overview %></p>
   <p><%= bookmark.comment %></p>
   <ul>
-  <li><%= bookmark.movie.rating %></li>
+    <li><%= bookmark.movie.rating %></li>
   </ul>
   <%= link_to "Delete", bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
 <% end %>
-
-
 
 <p><%= link_to "See all lists", lists_path %></p>
